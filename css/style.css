@@ -1,0 +1,444 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+/* #################----------UTILITYCLASSES---------################## */
+.container{
+    max-width: 1200px;
+    width:95% ;
+    margin: auto;
+    
+}
+body{
+    background-color: #ddd;
+}
+
+/* -----------HEADINGS--------- */
+.logo{
+    float: left;
+    font-size: 3.5em;
+    letter-spacing: .05em;
+}
+.bg-dark{
+    background-color: #263238;
+    height: 6rem;
+}
+.lg-heading{
+    font-size: 3.5em;
+    letter-spacing: .02em;
+}
+.md-heading{
+    font-size: 2.1em;
+    font-weight: 400;
+}
+
+/* --------------COLORS------------ */
+.text-red{
+    color: #e63946;
+}
+.text-light{
+    color: #f4f4f4;
+}
+.text-black{
+    color: #333;
+}
+.text-grey{
+    color: #555;
+}
+.btn-primary{
+    
+    background-color: #fff;
+}
+.btn{
+    display: inline-block;
+    padding: 0.8em 1rem;
+    margin: 1rem 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    border: .2rem solid #e63946;
+    border-radius: 2em;
+    font-size: 1.5em;
+    height: 3em;
+
+}
+/* -------------------------END OF UTILITY CLASSES---------------- */
+
+body{
+    font-family: sans-serif;
+}
+.header{
+    margin: -1rem;
+    height: 95vh;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../img/travel_books.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    justify-content: space-between;
+    padding: 1rem;
+}
+.navbar h1{
+    color: #bbb;
+    font-weight: 500;
+}
+
+.navbar span{
+    color: rgb(167, 14, 14); 
+}
+#nav_bar li{
+    list-style: none;
+    display: inline-block;
+    margin: 1rem;
+}
+.navbar ul {
+    float: right;
+
+}
+.navbar::after{
+    content: ;
+    clear: both;
+    display: inline-block;
+}
+#nav_bar li a{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+#nav_bar li a:hover{
+    /* color: rgb(131, 10, 10); */
+    font-size:1.8rem;
+    border-bottom:1px solid white;
+}
+.content{
+    transform: translate(0%,180%);
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+}
+.content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#content {
+    text-transform: uppercase;
+    padding: 1em;
+    font-weight: 700;
+}
+.content a:hover{
+    color: #fff;
+    background:none;
+}
+.showcase{
+    background-color:#ddd;
+}
+.row1,.row2{
+    background-color: #fff;
+    height: 350px;
+    margin-top: 50px ;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.363);
+}
+.text-box1,.text-box2{
+    height: 100%;
+    width: 50%;
+    padding:1.5em 0.5em;
+}
+.text-box1 h1,.text-box2 h1{
+    text-transform: uppercase;
+}
+.text-box1 p,.text-box2 p{
+    padding:1em 0.5em;
+}
+.img-box1,.img-box2{
+    height: 100%;
+    width: 50%;
+}
+.img1,.img2{
+    height: 100%;
+    width: 100%;
+}
+.img-box1,.text-box2{
+    float: left;
+}
+.text-box1,.img-box2{
+    float: right;
+}
+.text-box1 a:hover,.text-box2 a:hover{
+    background-color: #ddd;
+
+}
+.showcase::after{
+    content: ;
+    display: block;
+    clear: both;
+}
+.feature{
+    background-color: #fff;
+}
+.box-wrapper{
+    justify-content: left;
+    height: 15em;
+    padding: 2em 0px;
+}
+.box1,.box2,.box3{
+    display: inline-block;
+    float: left;
+    justify-content: left;
+    width: 33.3333%;
+    height: 25rem;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 0.363);
+}
+.box1 h2,.box2 h2,.box3 h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: .5em;
+
+}
+.box-wrapper::after{
+    content: ;
+    display: block;
+    clear: both;
+}
+.feature{
+    margin-top: 2em;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.363);
+
+}
+.box1,.box3{
+    background-color: #263238;
+    color: #fff;
+}
+.box2{
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+}
+.footer-section{
+    margin-top: 10em;
+    height: 100px;
+    background-color: #263238;
+}
+.footer-section p{
+    text-align: center;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+.social-media-links{
+    /* padding: 2em; */
+    text-align: center;
+}
+.social-media-links i{
+    padding: .5em;
+}
+.social-media-links a{
+    float: right;
+    margin-top: 2em;
+}
+.social-media-links a:hover{
+    color: #fff;
+    background: none;
+}
+.footer{
+    margin-top: 80em;
+}
+---------------########-----ABOUT PAGE-------############
+
+.about-heading{
+    border-bottom: 3px solid #e63946;
+}
+.about-us{
+    margin-top: 5em;
+    font-size: .9em;
+}
+.about-us h1{
+    border-bottom: 3px solid #e63946;
+    
+}
+.about{
+    margin-top: 2em;
+    font-size: .8em;
+}
+.colums{
+    margin-top: 5em;
+    display: flex;
+    height: 30em;
+}
+.colums ul{
+    margin-top: 5em;
+}
+.colums ul li{
+    list-style: none;
+    margin: 1em;
+    font-size: 2em;
+    font-weight: 400;
+}
+.col1{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.col2{
+    float: left;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+.col1 ul li::before,.col2 ul li::before{
+    content: '\2713';
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+
+}
+.records{
+    display: flex;
+}
+.records .num{
+    width: 25%;
+    text-align: center;
+    padding:.5em;
+}
+.records h1{
+    color: red;
+}
+.records p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+.contact{
+    text-align: center;
+    margin-top: 1em;
+    background: linear-gradient(25deg,#f8760b,#f00707 50%);
+}
+.contact p{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-right: 5em;
+}
+.contact a{
+    display: inline-block;
+    color: #fff;
+    background: none;
+    border: 1px solid #fff;
+    font-weight: bold;
+    padding-top: .2em;
+    height: 1.5em;
+
+}
+##############------contact page code-------########
+.contact-colums::after{
+    content: ;
+    display: block;
+    clear: both;
+    
+}
+.colum1{
+    margin-top: 2em;
+    /* padding-top: .5em ; */
+    float: left;
+    width: 49.5%;
+    height: 750px;
+}
+.colum2{
+    margin-top: 2em;
+    float: right;
+    height: 750px;
+    /* padding-top: .2em; */
+    width: 49.5%;   
+}
+.colum2 h3{
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    border-bottom: 4px solid #ee4758;
+}
+.colum2 p{
+    margin: .6em 0px;
+    font-size: .8em;
+    font-weight: 400;
+}
+.colum2 form{
+    font-size: 2rem;
+}
+.colum1 p{
+    font-size: 2em;
+    font-weight: 500;
+}
+.address,.email,.call{
+    margin: .2em 0px;
+    font-size: 12px;
+    font-weight: 300;
+}
+.address i,.email i,.call i{
+    margin-right: .3em;
+}
+.address ,.email,.call{
+    display: flex;
+
+}
+.colum1 p{
+    margin: .2em;
+    font-size:.8em;
+    color: grey;
+}
+.colum1 img{
+    height: 72%;
+    width: 99%;
+
+}
+.colum1,.colum2{
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 20px 1px 20px 0px rgb(218, 211, 211);
+}
+############################
+.form .user-name label::after,.mail label::after,.phone label::after {
+    
+}
+.form .user-name label::after,.mail label::after ,.phone label::after{
+    content:'*' ;
+    color: #e63946;
+}
+.form{
+    margin: 1em 0px;
+}
+.form label {
+    display: block;
+    margin: .5em 0px;
+}
+.form input,textarea{
+    width: 100%;
+    height: 2em;
+    padding: .5em;
+}
+.form textarea{
+    width: 100%;
+    height: 200px;
+}
+.form-btn{
+    font-size: 1em;
+    text-transform: uppercase;
+    padding:.4em .2em;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background-color: #ee4758;
+    color: #fff;
+
+}
+.form-btn:hover{
+    background-color: #263238;
+}
