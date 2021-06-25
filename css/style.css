@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html{
-    font-size: 62.5%;
+    font-size: 10px;
 }
 /* #################----------UTILITYCLASSES---------################## */
 .container{
@@ -15,6 +15,7 @@ html{
 }
 body{
     background-color: #ddd;
+    overflow-x: hidden;
 }
 
 /* -----------HEADINGS--------- */
@@ -73,7 +74,7 @@ body{
 }
 .header{
     margin: -1rem;
-    height: 95vh;
+    height: 90vh;
     background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../img/travel_books.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,7 +102,7 @@ body{
 
 }
 .navbar::after{
-    content: ;
+    /* content: ; */
     clear: both;
     display: inline-block;
 }
@@ -144,7 +145,7 @@ body{
 .row1,.row2{
     background-color: #fff;
     height: 350px;
-    margin-top: 50px ;
+    margin-top: 2rem ;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.363);
 }
 .text-box1,.text-box2{
@@ -206,14 +207,13 @@ body{
 
 }
 .box-wrapper::after{
-    content: ;
+    content:'' ;
     display: block;
     clear: both;
 }
 .feature{
     margin-top: 2em;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.363);
-
 }
 .box1,.box3{
     background-color: #263238;
@@ -251,7 +251,7 @@ body{
 .footer{
     margin-top: 80em;
 }
----------------########-----ABOUT PAGE-------############
+/* ---------------########-----ABOUT PAGE-------############ */
 
 .about-heading{
     border-bottom: 3px solid #e63946;
@@ -337,7 +337,7 @@ body{
     height: 1.5em;
 
 }
-##############------contact page code-------########
+/* ##############------contact page code-------######## */
 .contact-colums::after{
     content: ;
     display: block;
@@ -404,10 +404,8 @@ body{
     background-color: #fff;
     box-shadow: 20px 1px 20px 0px rgb(218, 211, 211);
 }
-############################
-.form .user-name label::after,.mail label::after,.phone label::after {
-    
-}
+/* ############################ */
+
 .form .user-name label::after,.mail label::after ,.phone label::after{
     content:'*' ;
     color: #e63946;
@@ -441,4 +439,55 @@ body{
 }
 .form-btn:hover{
     background-color: #263238;
+}
+
+@media screen and(max-width:900px){
+
+}
+
+@media screen and (max-width:700px){
+   
+    html{
+        font-size: 8px;
+    }
+    .header{
+        height: 70vh;
+    }
+    .navbar .logo,.navbar #nav_bar{
+        float: none;
+        display: block;
+        max-width: 100%;
+        text-align: center;
+        padding: .5rem;
+    }  
+    .row1,.row2{
+        height: auto;
+        width: 100%;
+    }
+    .row1 .img-box1,.row2  .img-box2,.text-box1,.img-box2,.text-box2,.img-box2{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .feature .box1,.feature .box2,.feature .box3{
+        float: none;
+        width: 100%;
+        text-align: center;
+        /* box-shadow: 0px 20px 0px rgba(0, 0, 0, 0.363) */
+    }
+    .feature .box2,.feature .box3{
+        margin-top: 5rem;
+    }
+    .feature{
+        margin-top: 2em;
+        box-shadow: none;
+    }
+    .footer-section{
+        margin-top: 60rem;
+    }
+    .colum1,.colum2{
+        float: none;
+        height: auto;
+        width: 100%;
+    }
 }
